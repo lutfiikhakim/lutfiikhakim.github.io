@@ -1,0 +1,11 @@
+folder simplyCountdown.js-master yg di ambil file :
+\simplyCountdown.js-master\simplyCountdown.js-master\dist\simplyCountdown.min.js
+\simplyCountdown.js-master\simplyCountdown.js-master\css\simplyCountdown.theme.default.css
+
+yg ada didalam folder countdown yg dipakai program
+
+
+
+================================================================
+untuk membuat foto2 menjadi gallery, bisa dibuka dan tutup dg mudah, bisa next ketika dibuka. bisa mengunakan lightbox dari bootstrap
+yg saaat ini digunakan lightbox of bootstrap 5

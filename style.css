@@ -1,0 +1,476 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5); /* bayangan */
+}
+
+body {
+  font-size: 1.2rem;
+
+  font-family: Work Sans, sans-serif;
+  min-height: 4000px;
+}
+
+.hero::before {
+  content: ""; /* utk pseudo elemnt before/after harus dikasih content supaya bisa diatur ukurannya, wlopun isinya kosong */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-prewed.jpg);
+  background-size: cover; /* supaya meng cover seluruh layar ketika di kecilin ikut mengecil sampe pd titik tdk ngecil lg kr tingginya udah pas */
+  background-position: center; /* di tengah sumbu x dan sumbu y */
+  z-index: -1; /* supaya posisi di belakang*/
+  filter: grayscale();
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh; /* agar tampilan memenuhi 1 layar, berapapun dimensi layarnya */
+  /* background-color: var(--bg); */
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: Sacramento, cursive;
+  font-size: 6rem;
+}
+
+.hero h4 {
+  font-size: 1.4rem;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  text-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.mynavbar {
+  background-color: rgba(
+    255,
+    255,
+    255 0.3
+  ) !important; /* pake !important supaya style ini yg digunakan, kalo tdk kalah sama bg bawahnya */
+  backdrop-filter: blur(
+    4px
+  ); /* ketika pake ini blur off canvas ngaco, maka di timpa style nya (.mycanvas .offcanvas{}) di bawah ini */
+}
+
+.mynavbar .offcanvas {
+  /* untuk menimpa backdrop-filter blur krn tinginya hilang jd offcanvas hilang*/
+  height: 100vh; /* agar tingginya kembali*/
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "sacramento", cursive;
+  font-size: 3.2 rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  /* font-weight: 600; */
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url(img/bg.jpg);
+  background-size: center;
+  min-height: 100vh;
+  margin-top: -6rem; /* di kasih -6 biar naik, bisa sampai bg navbarnya */
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.home h2,
+.info h2,
+.story h2,
+.gallery h2 {
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home .couple {
+  margin-top: 100px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+/* .info h2 { //karena sama dg .home h2 maka di pinjamkankan/di gabung css nya yg home
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+} */
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ) !important; /* biar bg trnsparang */
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-fooer {
+  border-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* .story h2 { //karena sama dg .home dan info maka di pinjamkankan/di gabung css nya home,info,story
+  color: var(--pink);
+  font-family: "Sacramento";
+  font-size: 5rem;
+  font-weight: bold;
+} */
+
+.story,
+.gallery{  /* section */
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.story span,
+.gallery span{ /* tag line story */
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px; /* supaya berjarak */
+  display: block;
+  margin-bottom: 1rem;
+
+}
+
+.story p, 
+.gallery p{
+  font-size: 1rem;
+  font-weight: 300; /* utk ketebalan/tipis font */
+
+}
+
+.timeline{  /* utk ngasih style ul nya*/
+  list-style: none; /* ngilangin style titik di li */
+  padding: 1.4rem 0; /* padding atas bawah */
+  margin-top: 1rem;
+  position: relative;
+
+}
+
+.timeline::before{ /*garis tengah */
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li{
+  margin-bottom: 1.5rem;
+  position: relative;
+
+}
+
+
+/* utk membuat li punya display tabel, spy seolah2 ada elemen dibelkang li seperti tabel*/
+.timeline li::before,
+.timeline  li::after{
+  content: ''; /* kalau pakai before affter jgn lupa kasih content kosong kalau memang gamau disisi apa2 tp ign jd sebuah elemen */
+  display: table;
+
+}
+
+.timeline li::after{
+  clear: both;
+}
+
+.timeline li .timeline-image{
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* ditarik ke kiri stengah */
+  border-radius: 50%; /* agar jd bulet*/
+  background-size: cover; /* 'cover' spy memenuhi sesuai binkai*/
+  background-position: center; /* spy fokus di tengah */
+  background-repeat: no-repeat; /* no-repeat spy ga berulang */
+
+}
+
+.timeline li .timeline-panel{
+  width: 40%; /* 40% dr lebar ul */
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px; /* spy kotaknya tumpul */
+  background-color: #fff;
+
+
+}
+
+.timeline li .timeline-panel::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid  transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+
+
+}
+
+.timeline li .timeline-panel::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid  transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 15px solid transparent;
+  top: 81px;
+  right: -13px;
+
+}
+
+.timeline li.timeline-inverted .timeline-panel{
+ 
+  float: right;
+  
+}
+
+.timeline li.timeline-inverted .timeline-panel::before{
+  border-left-width: 0 ;
+  border-right-width: 15px ;
+  left: -15px;
+  right: auto;
+
+}
+
+.timeline li.timeline-inverted .timeline-panel::after{
+  border-left-width: 0 ;
+  border-right-width: 14px ;
+  left: -13px;
+  right: auto;
+}
+
+
+.gallery{
+  background-color: #f5f5f5;
+}
+
+
+
+
+
+
+/* media query "agar tampilan responsive" */
+/* Extra large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before{  /* ktika resolusi laptop garis tengah geser kiri */
+    left: 60px;
+  }
+
+  .timeline li .timeline-image{ /* resolusi laptop gambar pindah ke kiri */
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel{ /* panel pindah kanan semua */
+    width: calc(100% - 200px);
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before{
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+
+  }
+
+  .timeline li .timeline-panel::after{
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+
+  }
+
+
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top{
+    overflow: hidden;
+
+  }
+
+  .timeline li .timeline-image{ /* gambar timeline d resolusi tablet */
+    width: 140px;
+    height: 140px;
+
+  }
+
+
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+  /* .sticky-top{
+    overflow: hidden;
+
+  } */
+
+  .timeline li .timeline-image{ /* gambar timeline d resolusi tablet */
+    width: 80px;
+    height: 80px;
+
+  }
+
+  .timeline li .timeline-panel{
+    width: 70%;
+    transform: translateX(-10px);
+  }
+
+  .timeline li .timeline-panel::before{
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after{
+    top: 31px;
+  }
+
+
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>wedding invitation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- simply countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootsrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- ditaruh bawah agar semua css jalan (countdown, dll) -->
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i yang terhormat</h4>
+        <h1>Lutfikhakim & UlfiNurA</h1>
+
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+
+        <div class="simply-countdown"></div>
+
+        <a href="#home" class="btn btn-lg mt-4">Lihat undangan</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <!-- class sticky-top : supaya navbar berada di tempat seharusnya. sticky ketika di scroll kebawah dia akan menempel bagian diatas -->
+      <div class="container">
+        <a class="navbar-brand" href="#">Lufi</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lufi</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <!-- ms = margin start. supaya mepet kanan -->
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">Rsvp</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 13 Juni 2024 di Semarang, Jawa Barat</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat,, kami bermaksud untuk
+              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Lutfi khakim</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime iure quas fugiat minima, expedita qui?
+                </p>
+                <p>
+                  Putra dari Bapak. Lorem <br />
+                  dan <br />
+                  Ibu ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/l.jpg"
+                  alt="Lutfi Khakim"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/ulfi.jpg"
+                  alt="Ulfi Nur A"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Ulfi Nur Alifah</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime iure quas fugiat minima, expedita qui?
+                </p>
+                <p>
+                  Putra dari Bapak. ipsum <br />
+                  dan <br />
+                  Ibu lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p>
+              Alamat : Gedung kologdam, Jl. Aceh, Merdeka, Kec. Sumur Bandung,
+              Kota Bandung, Jawa Barat 40113
+            </p>
+            <a
+              href="https://maps.app.goo.gl/CucjpA4bZpmN5H3x5"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba
+              ditujuan amun tidak ada tanda tanda sedang dilangsungkan
+              pernikahan boleh jadi Anda salah jadwal, atau salah tempat
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 13 juni 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                seluruh prosesi
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 13 juni 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                seluruh prosesi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta kami bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quos explicabo natus fugiat perferendis cumque.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/mieloka.png);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>25 Februari 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quod quaerat nesciunt ipsum quis neque.
+
+                    </p>
+                  </div>
+                  
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Kedua Bertemu</h3>
+                    <span>11 Maret 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel nam provident similique nulla id, veritatis assumenda iure.
+
+                    </p>
+                  </div>
+                  
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Ketiga Bertemu</h3>
+                    <span>15 April 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum, quam quis similique eaque praesentium animi.
+
+                    </p>
+                  </div>
+                  
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori kisah kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, similique?</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+          <div class="col mt-3">
+            <a href="img/gallery/1.png" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery">
+              <img src="img/gallery/thumbnail/1.png" alt="sampel gallery" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/300/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 2">
+              <img src="https://picsum.photos/id/300/300/400" alt="sampel gallery 2" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/301/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 2">
+              <img src="https://picsum.photos/id/301/300/400" alt="sampel gallery 3" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/302/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 3">
+              <img src="https://picsum.photos/id/302/300/400" alt="sampel gallery 3" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/304/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 4">
+              <img src="https://picsum.photos/id/304/300/400" alt="sampel gallery 4" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/305/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 5">
+              <img src="https://picsum.photos/id/305/300/400" alt="sampel gallery 5" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/307/1200/768" data-toggle="lightbox" data-gallery="galleriku" data-caption="sampel gallery 7">
+              <img src="https://picsum.photos/id/307/300/400" alt="sampel gallery 7" class="img-fluid w-100 rounded">
+            </a>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 6, // required
+        day: 13, // required
+        hours: 8, // Default is 0 [0-23] integer
+        minutes: 0, // Default is 0 [0-59] integer
+        seconds: 0, // Default is 0 [0-59] integer
+        words: {
+          // words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+        plural: true, //use plurals. krn di b.indo ga ada plural bisa di hapus aja
+        // inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds( tergantung stle yg digunakan) yg dipakai skrg ga butuh, bisa dihapus aja
+        // inlineClass: "simply-countdown-inline", //inline css span class in case of inline = true
+        // in case of inline set to false
+        enableUtc: false,
+      });
+
+      // This is an example with default parameters
+      // You'll always have to call simplyCountdown using ID's, no classes.
+
+      simplyCountdown("[CSS-SELECTOR]", {});
+
+      // Also, you can init with already existing Javascript Object.
+      let myElement = document.querySelector(".my-countdown");
+      simplyCountdown(myElement, {
+        /* options */
+      });
+
+      let multipleElements = document.querySelectorAll(".my-countdown");
+      simplyCountdown(multipleElements, {
+        /* options */
+      });
+    </script>
+
+    <script>
+      
+      const stickyTop = document.querySelector('.sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+      // hamburger.addEventListener('click', function(){
+      //   stickyTop.style.overflow='visible'; // agar ketika di klik agar overlflow kembali muncul dan menu bisa muncul
+      // });
+      offcanvas.addEventListener('show.bs.offcanvas', function(){
+        stickyTop.style.overflow='visible'; // agar ketika di klik hmburger, overlflow kembali muncul dan menu bisa muncul
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow='hidden';
+        
+      });
+
+    </script>
+  </body>
+</html>
